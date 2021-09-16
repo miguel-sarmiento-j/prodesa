@@ -25,6 +25,8 @@ esp_consolidado_corte = pd.read_excel(data_bytes)
 
 # DataSet Preparation
 
+print("Data loaded!!!")
+
 stg_consolidado_corte=pd.DataFrame([],columns=['stg_project_id'])
 
 stg_consolidado_corte['stg_project_id']=pd.to_numeric(esp_consolidado_corte['ID'])
